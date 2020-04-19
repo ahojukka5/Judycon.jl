@@ -7,7 +7,7 @@ struct QuickFind
     id :: Vector{Int}
 end
 
-function QuickFind(n)
+function QuickFind(n::Int)
     id = collect(1:n)
     return QuickFind(id)
 end
