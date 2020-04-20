@@ -1,4 +1,4 @@
-# Judycon.jl
+![Judycon.jl](demos/percolation.gif)
 
 [![][travis-img]][travis-url]
 [![][coveralls-img]][coveralls-url]
@@ -12,12 +12,10 @@ language. In computing and graph theory, a [dynamic connectivity structure][1]
 is a data structure that dynamically maintains information about the connected
 components of a graph. Dynamic connectivity has a lot of applications. For
 example, dynamic connetivity [can be used][2] to determine functional
-connectivity change points in fMRI data. In below, percolation model is solved
-using the functions provided this package. For more information about the model,
-scroll down to the bottom of this readme file. Project documentation is found
-from address <https://ahojukka5.github.io/Judycon.jl/dev/>.
-
-![](demos/percolation_320x320.gif)
+connectivity change points in fMRI data. In the top of this readme, you see a
+percolation model which is solved using the functions provided this package. For
+more information about the model and the package, see the documentation. Project
+documentation is found from url <https://ahojukka5.github.io/Judycon.jl/dev/>.
 
 ## Usage
 
