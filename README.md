@@ -2,6 +2,8 @@
 
 [![][travis-img]][travis-url]
 [![][coveralls-img]][coveralls-url]
+[![][docs-stable-img]][docs-stable-url]
+[![][docs-dev-img]][docs-dev-url]
 
 Package author: Jukka Aho (@ahojukka5)
 
@@ -12,11 +14,14 @@ components of a graph. Dynamic connectivity has a lot of applications. For
 example, dynamic connetivity [can be used][2] to determine functional
 connectivity change points in fMRI data. In below, percolation model is solved
 using the functions provided this package. For more information about the model,
-scroll down to the bottom of this readme file.
+scroll down to the bottom of this readme file. Project documentation is found
+from address <https://ahojukka5.github.io/Judycon.jl/dev/>.
 
 ![](demos/percolation_320x320.gif)
 
-## Implemented algorithms:
+## Usage
+
+The following two algoritms are implemented:
 
 - QuickFind
 - QuickUnion
@@ -25,7 +30,7 @@ Both of the algorithms have same API, but the internal data structure is
 different. Typical use case is:
 
 ```julia
-using Judycon: QuickUnion, connect!, isconnected
+using Judycon: QuickFind, QuickUnion, connect!, isconnected
 
 wuf = QuickUnion(10)
 connect!(wuf, 1, 2)
@@ -37,6 +42,9 @@ isconnected(wuf, 1, 4)
 
 true
 ```
+
+For further information about the implementation details and usage, please see
+the [documentation][docs-dev-url].
 
 QuickFind is a simple data structure making it possible to very fast query, does
 points p and q belong to the same connected component, but connecting the points
@@ -128,3 +136,7 @@ of this file.
 [travis-url]: https://travis-ci.org/ahojukka5/Judycon.jl
 [coveralls-img]: https://coveralls.io/repos/github/ahojukka5/Judycon.jl/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/ahojukka5/Judycon.jl?branch=master
+[docs-dev-img]: https://img.shields.io/badge/docs-dev-blue.svg
+[docs-dev-url]: https://ahojukka5.github.io/Judycon.jl/dev
+[docs-stable-img]: https://img.shields.io/badge/docs-stable-blue.svg
+[docs-stable-url]: https://ahojukka5.github.io/Judycon.jl/stable
