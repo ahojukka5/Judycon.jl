@@ -3,5 +3,8 @@ uuid = "821431bb-3694-4a4d-8d24-d71fd509a174"
 authors = ["Jukka Aho <ahojukka5@gmail.com>"]
 version = "0.1.0"
 
+[compat]
+julia = "≥ 1.0"
+
 [deps]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
