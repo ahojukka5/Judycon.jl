@@ -1,9 +1,9 @@
 ![Judycon.jl](demos/percolation.gif)
 
-[![][travis-img]][travis-url]
-[![][coveralls-img]][coveralls-url]
-[![][docs-stable-img]][docs-stable-url]
-[![][docs-dev-img]][docs-dev-url]
+[![Build Status][travis-img]][travis-url]
+[![Coverage Status][coveralls-img]][coveralls-url]
+[![Documentation (stable)][docs-stable-img]][docs-stable-url]
+[![Documentation (development)][docs-dev-img]][docs-dev-url]
 
 Package author: Jukka Aho (@ahojukka5)
 
